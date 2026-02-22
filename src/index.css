@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-white transition-colors duration-300;
+  }
+}
+
+.glass-card {
+  @apply bg-slate-900/80 border-slate-800 shadow-none backdrop-blur-md border rounded-2xl transition-all duration-300;
+}
+
+.input-area {
+  @apply w-full h-48 p-6 bg-transparent border-none focus:ring-0 text-xl resize-none font-sans;
+}
+
+.lang-select {
+  @apply flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer text-sm font-medium;
+}
+
+.dark .lang-select {
+  @apply hover:bg-slate-800;
+}
+

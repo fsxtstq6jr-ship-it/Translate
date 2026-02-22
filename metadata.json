@@ -1,0 +1,7 @@
+{
+  "name": "Remix: TRanslate🇹🇷",
+  "description": "Profesyonel, hızlı ve akıllı çok dilli çeviri platformu.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
